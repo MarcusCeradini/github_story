@@ -29,6 +29,7 @@ b2.addEventListener('click', () => {
     b1.textContent = "Neutrality"
     b2.textContent = "Side with Evan"
     b3.textContent = "Side with chris"
+
     b1.addEventListener('click', () => {
         header.textContent = "Ending 2"
         warn.style.display = "none"
@@ -50,6 +51,7 @@ b2.addEventListener('click', () => {
         b1.textContent = "Mine Netherite"
         b2.textContent = "Grind other materials"
         b3.style.display = "none"
+
             b1.addEventListener('click', () => {
                 header.textContent = "Ending 3"
                 warn.style.display = "none"
@@ -71,6 +73,7 @@ b2.addEventListener('click', () => {
                 b1.textContent = "Run away"
                 b2.textContent = "Fight with your team"
                 b3.style.display = "none"
+
                 b1.addEventListener('click', function running(){
                     header.textContent = "War Arc"
                     warn.style.display = "none"
@@ -79,10 +82,12 @@ b2.addEventListener('click', () => {
                     image2.style.display = "none"
                     image3.style.display = "none"
                     b1.textContent = "Continue"
-                    console.log(b1)
+                    b1.style.display = "flex"
                     b2.style.display = "none"
                     b3.style.display = "none"
+
                     b1.removeEventListener('click', running)
+
                     b1.addEventListener('click', function ending4(){
                         header.textContent = "Ending 4"
                         warn.style.display = "none"
@@ -95,6 +100,7 @@ b2.addEventListener('click', () => {
                         b3.style.display = "none"
                     })
                 })
+
                 b2.addEventListener('click', () => {
                     header.textContent = "War Arc"
                     warn.style.display = "none"
