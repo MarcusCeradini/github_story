@@ -17,12 +17,98 @@ while(player === ""){
 }
 
 b1.addEventListener('click', () => {
-    console.log("hi")
+    b1.addEventListener('click', () => {
+        header.textContent = "Investigation Arc"
+        text.textContent = "Instead of telling everyone and leading to chaotic accusations you swear to find the culpreet without anyone finding out what your doing. You go outside the crime scene to see if you can quickly find the culpret and you find Evan, Nayan, Troy, and Rudra in the area at the gun powder farm. "
+        image1.src = "line2part1.webp"
+        image2.style.display = "none"
+        image3.style.display = "none"
+        b1.textContent = "Continue"
+        b2.style.display = "none"
+        b3.style.display = "none"
+        b1.addEventListener('click', () => {
+            header.textContent = "Investigation Arc"
+            text.textContent = "Before you get to the actual investigation you ask Christopher for help because he is the most trustworthy person on the server is has a very astute eye for detail."
+            image1.src = "line2part1.webp"
+            image2.style.display = "none"
+            image3.style.display = "none"
+            b1.textContent = "Continue"
+            b2.style.display = "none"
+            b3.style.display = "none"
+            b1.addEventListener('click', askchristopher)
+        })
+    })
 })
+
+
+function askchristopher(){
+    header.textContent = "Investigation Arc"
+    text.textContent = "You go talk to Christopher and he seggests either going back to the crime scene or question the people at the gun powder farm"
+    image1.src = "line2part1.webp"
+    image2.style.display = "none"
+    image3.style.display = "none"
+    b1.textContent = "Go to the Crime Scene"
+    b1.style.display = "flex"
+    b2.textContent = "Question gunpowder farm people"
+    b2.style.display = "flex"
+    b3.style.display = "none"
+    b1.addEventListener('click', crimescene)
+    b2.addEventListener('click', gunpowder)
+}
+
+function crimescene(){
+    header.textContent = "Investigation Arc"
+    text.textContent = "You decide to go back to the crime scene and you find the culpret's armor lying there. He seems to have pilfered Karim's armor from his dead body"
+    image1.src = "line2part1.webp" // insert chris's old base screenshot
+    image2.style.display = "none"
+    image3.style.display = "none"
+    b1.textContent = "Question gunpowder farm people"
+    b1.style.display = "flex"
+    b2.style.display = "Call Among Us style meeting"
+    b2.style.display = "flex"
+    b3.style.display = "none"
+    b1.addEventListener('click', gunpowder)
+    b2.addEventListener('click', amongus)
+}
+
+function gunpowder(){
+    header.textContent = "Investigation Arc"
+    text.textContent = "You decide to go to the gunpowder farm and question everyone. Evan and Nayan said that they were together getting materials for a 'special' project, both are wearing full netherite. Rudra said that he was there for a while to get rockets to use when he gets an elytra, he is wearing full diamond. Finally Troy said he just got there to get more rockets for his elytra, he is wearing full nertherite."
+    image1.src = "line2part1.webp" // insert chris's old base screenshot
+    image2.style.display = "none"
+    image3.style.display = "none"
+    b1.textContent = "Got to crime scene"
+    b1.style.display = "flex"
+    b2.style.display = "Call Among Us style meeting"
+    b2.style.display = "flex"
+    b3.style.display = "none"
+    b1.addEventListener('click', crimescene)
+    b1.addEventListener('click', amongus)
+}
+
+function amongus(){
+    header.textContent = "Investigation Arc"
+    text.textContent = "You call an Amoung Us style meeting and the first thing you say is 'There is an imposter among us'. You explained to everyone that Karim was murdered in front of you and you have been following clues to track down his killer. Now who do you think the killer is?"
+    setTimeout(function(){
+        let culpret = prompt("Who do you think the culpret is")
+    }, 1500);
+    image1.src = "line2part1.webp" // insert chris's old base screenshot
+    image2.style.display = "none"
+    image3.style.display = "none"
+    b1.textContent = "Got to crime scene"
+    b1.style.display = "flex"
+    b2.style.display = "Call Among Us style meeting"
+    b3.style.display = "none"
+}
+
+
+
+
+
 
 b2.addEventListener('click', () => {
     header.textContent = "War Arc"
-    text.textContent = "You tell everyone and accusations start being thrown left and right about who killed the server's 'favorite person'. But supprisingly no one is accussing Marcus, Rudra, or Troy. Everyone starts chhosing sides and you need to choose one too. Which do you choose"
+    text.textContent = "You tell everyone and accusations start being thrown left and right about who killed the server's 'favorite person'. But supprisingly no one is accussing Marcus, Rudra, or Troy. Everyone starts chhosing sides and you need to choose one too. Which do you choose."
     image1.src = "line2part1.webp"
     image2.style.display = "none"
     image3.style.display = "none"
@@ -33,7 +119,7 @@ b2.addEventListener('click', () => {
     b1.addEventListener('click', () => {
         header.textContent = "Ending 2"
         warn.style.display = "none"
-        text.textContent = "You side with neutrality and refuse to fight in the war. You fly away and live in peace without fighting whatsoever"
+        text.textContent = "You side with neutrality and refuse to fight in the war. You fly away and live in peace without fighting whatsoever."
         image1.src = "ending_2.jpg"
         image2.style.display = "none"
         image3.style.display = "none"
@@ -44,7 +130,7 @@ b2.addEventListener('click', () => {
     b2.addEventListener('click', () => {
         header.textContent = "War Arc"
         warn.style.display = "none"
-        text.textContent = `You side with Evan who just wanted a motive to have a war for the fun of it. What do you want to do first: try to get full netherite or grind other materials with the team (Evan, lucas, and you ${player})`
+        text.textContent = `You side with Evan who just wanted a motive to have a war for the fun of it. What do you want to do first: try to get full netherite or grind other materials with the team (Evan, lucas, and you ${player}).`
         image1.src = "line2part2.jpg"
         image2.style.display = "none"
         image3.style.display = "none"
@@ -55,7 +141,7 @@ b2.addEventListener('click', () => {
             b1.addEventListener('click', () => {
                 header.textContent = "Ending 3"
                 warn.style.display = "none"
-                text.textContent = "You have Marcus's luck and die from lava like all his nether deaths"
+                text.textContent = "You have Marcus's luck and die from lava like all his nether deaths."
                 image1.src = "ending3.webp"
                 image2.style.display = "none"
                 image3.style.display = "none"
@@ -91,7 +177,7 @@ b2.addEventListener('click', () => {
                     b1.addEventListener('click', function ending4(){
                         header.textContent = "Ending 4"
                         warn.style.display = "none"
-                        text.textContent = "After all the fighting and chaos you won the war. But you didn't do enough to properly be considered a winner and you just stand there as Evan and Lucas stand victorious on the podium"
+                        text.textContent = "After all the fighting and chaos you won the war. But you didn't do enough to properly be considered a winner and you just stand there as Evan and Lucas stand victorious on the podium."
                         image1.src = "ending4.webp"
                         image2.style.display = "none"
                         image3.style.display = "none"
@@ -114,7 +200,7 @@ b2.addEventListener('click', () => {
                     b1.addEventListener('click', function ending4(){
                         header.textContent = "Ending 4"
                         warn.style.display = "none"
-                        text.textContent = "After all the fighting and chaos you won the war. But you didn't do enough to properly be considered a winner and you just stand there as Evan and Lucas stand victorious on the podium"
+                        text.textContent = "After all the fighting and chaos you won the war. But you didn't do enough to properly be considered a winner and you just stand there as Evan and Lucas stand victorious on the podium."
                         image1.src = "ending4.webp"
                         image2.style.display = "none"
                         image3.style.display = "none"
@@ -125,12 +211,13 @@ b2.addEventListener('click', () => {
                 })
             })
     })
+    b3.addEventListener('click', askchristopher)
 })
 
 b3.addEventListener('click', () => {
     header.textContent = "Ending 1"
     warn.style.display = "none"
-    text.textContent = "You just don't care and go on with your life"
+    text.textContent = "You just don't care and go on with your life."
     image1.src = "don't_care.jpg"
     image2.style.display = "none"
     image3.style.display = "none"
