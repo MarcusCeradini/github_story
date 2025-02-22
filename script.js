@@ -128,7 +128,6 @@ function amongus() {
             culpretfound()
         }
         else if(culpret == ""){
-            guess = prompt("Who do you think the culpret is")
         }
         else{
             wrong()
