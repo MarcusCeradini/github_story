@@ -71,7 +71,7 @@ function askchristopher() {
 function crimescene() {
     header.textContent = "Investigation Arc"
     text.textContent = "You decide to go back to the crime scene and you find the culpret's armour lying there. He seems to have pilfered Karim's armour from his dead body"
-    image1.src = "chrisbasearmour.png"
+    image1.src = "chrisbasearmor.png"
     image1.style.display = "flex"
     b1.textContent = "Question gunpowder farm people"
     b1.style.display = "flex"
