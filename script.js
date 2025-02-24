@@ -55,7 +55,7 @@ function b1n1() {
  
 function askchristopher() {
     header.textContent = "Investigation Arc"
-    text.textContent = "You go talk to Christopher and he seggests either going back to the crime scene or question the people at the gun powder farm"
+    text.textContent = "You go talk to Christopher and he suggests either going back to the crime scene or question the people at the gun powder farm"
     image1.style.display = "none"
     b1.textContent = "Go to the Crime Scene"
     b1.style.display = "flex"
