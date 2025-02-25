@@ -31,7 +31,7 @@ function b3n1() {
  
 function b1n2() {
     header.textContent = "Investigation Arc"
-    text.textContent = "Before you get to the actual investigation you ask Christopher for help because he is the most trustworthy person on the server is has a very astute eye for detail."
+    text.textContent = "Before you get to the acctual investigation you ask Christopher for help because he is the most trustworthy person on the server is has a very astute eye for detail."
     image1.style.display ="none"
     b1.textContent = "Continue"
     b2.style.display = "none"
